@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="rahulshettyacademy.TestComponents.Listeners"/>
+    </listeners>
+    <test name="SubmitOrder-module" thread-count="5">
+        <classes>
+            <class name="rahulshettyacademy.pageObjects.SubmitOrderTest">
+                <methods>
+                    <include name="submitOrder"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <!--<test verbose="2" preserve-order="true" thread-count="5" name="ErrorValidation-module">
+        <classes>
+            <class name="rahulshettyacademy.pageObjects.ErrorValidation">
+                <methods>
+                    <include name="loginErrorValidation"/>
+                    <include name="producterrorValidation"/>
+
+                </methods>
+            </class>
+
+        </classes>
+    </test>-->
+</suite>
